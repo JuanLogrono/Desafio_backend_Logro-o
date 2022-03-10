@@ -25,8 +25,8 @@ class Usuario {
         const arrayTitulos=[]
         this.libros.forEach(books => {
        arrayTitulos.push(books.titulo)
-       console.log(arrayTitulos) })
-      
+        })
+      console.log(arrayTitulos)
     }
 
 }
