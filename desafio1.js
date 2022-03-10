@@ -7,30 +7,26 @@ class Usuario {
         this.mascotas = mascotas
     }
     getFullName(){
-     return( console.log(`${this.nombre} ${this.apellido}`));
+     console.log(`${this.nombre} ${this.apellido}`);
     }
     addMascota(newPet){
-        return(
             this.mascotas.push(newPet),
             console.log(this.mascotas)
-        );
-
     }
     countMascotas(){
-        return(console.log(this.mascotas.length));
+       console.log(this.mascotas.length);
     }
 
     addBook(libro){
-       return( 
         this.libros.push(libro),
-        console.log(this.libros));
+        console.log(this.libros);
     }
     getBookNames(){
         const arrayTitulos=[]
-       return( this.libros.forEach(books => {
+        this.libros.forEach(books => {
        arrayTitulos.push(books.titulo)
-       }),
-       console.log(arrayTitulos))
+       console.log(arrayTitulos) })
+      
     }
 
 }
